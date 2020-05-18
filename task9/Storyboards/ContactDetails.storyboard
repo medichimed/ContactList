@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xug-lx-Xht">
+    <device id="ipad10_2" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Contact Details View Controller-->
+        <scene sceneID="o5C-Sj-x9K">
+            <objects>
+                <viewController storyboardIdentifier="ContactDetails" id="Xug-lx-Xht" customClass="ContactDetailsViewController" customModule="task9" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bw8-Ru-U4j">
+                        <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="equalSpacing" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="yxS-qC-ORV">
+                                <rect key="frame" x="40.5" y="25" width="729" height="379"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="JEG-D6-zUR" customClass="BorderedImage" customModule="task9" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="291.5" height="291.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="JEG-D6-zUR" secondAttribute="height" multiplier="1:1" id="wRA-vh-RdF"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="0.20000000000000001"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="pfT-33-Gff" userLabel="Inner Stack View">
+                                        <rect key="frame" x="306.5" y="0.0" width="422.5" height="379"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Na3-qo-zUj" userLabel="First Name Outlet">
+                                                <rect key="frame" x="0.0" y="0.0" width="422.5" height="106.5"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="firstNameDetails"/>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Is4-05-yhB">
+                                                <rect key="frame" x="0.0" y="136.5" width="422.5" height="106"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="secondNameDetails"/>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKr-Gh-LEj">
+                                                <rect key="frame" x="0.0" y="272.5" width="422.5" height="106.5"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="phoneDetails"/>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.78237394780000002" blue="0.71127821970000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="JEG-D6-zUR" firstAttribute="width" secondItem="yxS-qC-ORV" secondAttribute="width" multiplier="0.4" id="Dd7-3w-7Ha"/>
+                                    <constraint firstItem="pfT-33-Gff" firstAttribute="height" secondItem="yxS-qC-ORV" secondAttribute="height" id="a6g-nV-aDU"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gZt-Rf-vC3">
+                                <rect key="frame" x="40.5" y="470.5" width="729" height="486"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="D19-aE-rqf">
+                                        <rect key="frame" x="0.0" y="0.0" width="729" height="115.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSW-pq-kPB">
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="115.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="250" id="ZNJ-WC-g4y"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WqI-bx-5Pg">
+                                                <rect key="frame" x="260" y="0.0" width="469" height="115.5"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="emailDetails"/>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DNP-ka-6yv">
+                                        <rect key="frame" x="0.0" y="123.5" width="729" height="115.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uch-6p-Z25">
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="115.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="250" id="DIW-rM-zlY"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSz-bX-Z0i">
+                                                <rect key="frame" x="260" y="0.0" width="469" height="115.5"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="emailDetails"/>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="68b-4C-qrx">
+                                        <rect key="frame" x="0.0" y="247" width="729" height="115.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QyJ-9Q-ibN">
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="115.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="250" id="uhP-Kv-y30"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11D-XG-DbC">
+                                                <rect key="frame" x="260" y="0.0" width="469" height="115.5"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="emailDetails"/>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="c1h-3a-0Z8">
+                                        <rect key="frame" x="0.0" y="370.5" width="729" height="115.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axV-2n-opl">
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="115.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="250" id="Urf-a0-jg2"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FE3-OQ-cRj">
+                                                <rect key="frame" x="260" y="0.0" width="469" height="115.5"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="emailDetails"/>
+                                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gZt-Rf-vC3" firstAttribute="height" secondItem="jPs-3O-yRf" secondAttribute="height" multiplier="0.45" id="6ux-r2-e3A"/>
+                            <constraint firstItem="gZt-Rf-vC3" firstAttribute="top" secondItem="yxS-qC-ORV" secondAttribute="bottom" constant="66.5" id="7Fu-py-j7r"/>
+                            <constraint firstItem="yxS-qC-ORV" firstAttribute="height" secondItem="jPs-3O-yRf" secondAttribute="height" multiplier="0.35" constant="1" id="81n-DF-LCS"/>
+                            <constraint firstItem="gZt-Rf-vC3" firstAttribute="centerX" secondItem="jPs-3O-yRf" secondAttribute="centerX" id="Bq5-D8-qrS"/>
+                            <constraint firstItem="yxS-qC-ORV" firstAttribute="width" secondItem="jPs-3O-yRf" secondAttribute="width" multiplier="0.9" id="Kj6-yX-FxY"/>
+                            <constraint firstItem="yxS-qC-ORV" firstAttribute="top" secondItem="jPs-3O-yRf" secondAttribute="top" constant="25" id="Li1-9V-65B"/>
+                            <constraint firstItem="yxS-qC-ORV" firstAttribute="centerX" secondItem="bw8-Ru-U4j" secondAttribute="centerX" id="fJK-PR-MSz"/>
+                            <constraint firstItem="gZt-Rf-vC3" firstAttribute="trailing" secondItem="yxS-qC-ORV" secondAttribute="trailing" id="q8z-Um-Ndg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jPs-3O-yRf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DYR-f6-LeL">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="pe1-Hj-HwU">
+                            <connections>
+                                <action selector="backButtonPressed:" destination="Xug-lx-Xht" id="0Vl-QW-y47"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="4dC-ia-4Kc">
+                            <connections>
+                                <segue destination="nQJ-kf-vZw" kind="show" identifier="toEditPage" id="eqM-iS-qIA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageViewAvatar" destination="JEG-D6-zUR" id="tUM-HP-Rq4"/>
+                        <outlet property="labelBirthday" destination="JSz-bX-Z0i" id="0dc-dr-6nT"/>
+                        <outlet property="labelBirthdayTitle" destination="Uch-6p-Z25" id="6KN-np-6oX"/>
+                        <outlet property="labelDriverLicense" destination="FE3-OQ-cRj" id="lGp-Mn-H5n"/>
+                        <outlet property="labelDriverLicenseTitle" destination="axV-2n-opl" id="vN2-sf-irV"/>
+                        <outlet property="labelEmail" destination="WqI-bx-5Pg" id="dzD-as-Kia"/>
+                        <outlet property="labelEmailTitle" destination="SSW-pq-kPB" id="LxJ-Q6-nxA"/>
+                        <outlet property="labelHeight" destination="11D-XG-DbC" id="rxS-Gm-glN"/>
+                        <outlet property="labelHeightTitle" destination="QyJ-9Q-ibN" id="Di1-J0-Okn"/>
+                        <outlet property="labelNameFirst" destination="Na3-qo-zUj" id="nBX-Uk-e75"/>
+                        <outlet property="labelNameSecond" destination="Is4-05-yhB" id="zB2-ga-4cA"/>
+                        <outlet property="labelPhone" destination="LKr-Gh-LEj" id="z5o-Rh-f8q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z2p-bk-cHg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1073.913043478261" y="172.76785714285714"/>
+        </scene>
+        <!--EditingPage-->
+        <scene sceneID="CAe-Lc-HBz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EditingPage" id="nQJ-kf-vZw" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="IuT-DB-OjA"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IPW-6c-561" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1633" y="173"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camera" width="512" height="512"/>
+    </resources>
+</document>

@@ -1,0 +1,52 @@
+/* 
+  Localizable.strings
+  task9
+
+  Created by Oksana Kotilevska on 2/14/20.
+  Copyright © 2020 Oksana Kotilevska. All rights reserved.
+*/
+
+//ContactList
+"emptyScreenLabel" = "Your contact list is empty for now";
+"emptyScreenBtn" = "Add Contact";
+"edit" = "Edit";
+
+//EditPage
+"add" = "Add";
+"save" = "Save";
+"cancel" = "Cancel";
+"newContact" = "New Contact";
+"removalConfirmation" = "Please, confirm removal";
+"delete" = "Delete";
+"camera" = "Camera";
+"gallery" = "Gallery";
+"imageSourceSelection" = "Please, select source for avatar";
+"deleteBtn" = "DeleteContact";
+"optionsRemove" = "Remove";
+"optionsChange" = "Change";
+"contactRemovalConfirmation" = "";
+
+//(CellManagment struct)
+"editNameLabel" = "First name:";
+"editNameHolder" = "Enter first name";
+"editSurnameLabel" = "Last name:";
+"editSurnameHolder" = "Enter last name";
+"editPhoneLabel" = "Phone:";
+"editPhoneHolder" = "Enter phone number";
+"editEmailLabel" = "Email:";
+"editEmailHolder" = "Enter email";
+"editBirthdayLabel" = "Birthday:";
+"editBirthdayHolder" = "Pick birthday date";
+"editHeightLabel" = "Height:";
+"editHeightHolder" = "Pick height";
+"editLicenseLabel" = "Driver license";
+"editLicenseHolder" = "Enter license";
+
+//ContactDetails
+"detailsEmail" = "Email: ";
+"detailsHeight" = "Height: ";
+"detailsBirthday" = "Birthday date: ";
+"detailsLicense" = "Driver License №: ";
+
+"backItem" = "Cancel";
+"forwardItem" = "Edit";

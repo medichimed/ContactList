@@ -1,0 +1,52 @@
+/* 
+  Localizable.strings
+  task9
+
+  Created by Oksana Kotilevska on 2/14/20.
+  Copyright © 2020 Oksana Kotilevska. All rights reserved.
+*/
+
+//ContactList
+"emptyScreenLabel" = "У вас досі немає друзів...";
+"emptyScreenBtn" = "Додати контакт";
+"edit" = "Змінити";
+
+//EditPage
+"add" = "Додати";
+"save" = "Зберегти";
+"cancel" = "Скасувати";
+"newContact" = "Новий контакт";
+"removalConfirmation" = "Будь ласка, підтвердіть видалення";
+"delete" = "Видалити";
+"camera" = "Камера";
+"gallery" = "Галерея";
+"imageSourceSelection" = "Оберіть джерело картинки";
+"deleteBtn" = "Видалити контакт";
+"optionsRemove" = "Видалити";
+"optionsChange" = "Змінити";
+"contactRemovalConfirmation" = "Ви впевнені, що бажаєте ввидалити контакт?";
+
+//(CellManagment struct)
+"editNameLabel" = "Ім'я:";
+"editNameHolder" = "Введіть ім'я";
+"editSurnameLabel" = "Прізвище:";
+"editSurnameHolder" = "Введіть фамілію";
+"editPhoneLabel" = "Телефон:";
+"editPhoneHolder" = "Введіть номер телефону";
+"editEmailLabel" = "Імейл:";
+"editEmailHolder" = "Введіть імейл";
+"editBirthdayLabel" = "Днюшка:";
+"editBirthdayHolder" = "Оберіть дату народження";
+"editHeightLabel" = "Зріст:";
+"editHeightHolder" = "Оберіть зріст";
+"editLicenseLabel" = "Водійські права:";
+"editLicenseHolder" = "Введіть номер";
+
+//ContactDetails
+"detailsEmail" = "Імейл:";
+"detailsHeight" = "Зріст:";
+"detailsBirthday" = "День народження:";
+"detailsLicense" = "Водійське посвідчення:";
+
+"backItem" = "Назад";
+"forwardItem" = "Змінити";
